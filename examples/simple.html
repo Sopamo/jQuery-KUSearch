@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery KUSearch - Simple example</title>
+    <meta name="description" content="">
+    <meta name="author" content="Paul Mohr - Sopamo">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.kusearch-0.8.js"></script>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <style type="text/css">
+        #main {
+            padding: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $('#foo').kusearch({data:'#data',find:'li'});
+        });
+    </script>
+</head>
+
+<body>
+<div id="main" role="main">
+<h1 style="margin-bottom: 0;">A really simple example for KUSearch.</h1>
+<h2 style="margin-bottom: 20px;">More advanced ones will follow!</h2>
+<blockquote>
+    <p>jQuery KUSearch enables the user to filter a set of elements (mainly lists) with a simple input field.</p>
+    <p>Just try the following example:</p>
+</blockquote>
+<input id="foo" type="text" style="margin:10px;" placeholder="Type here to filter the list">
+<ol id="data">
+    <li rel="a">Foo</li>
+    <li rel="b">Bar</li>
+    <li rel="c">Baz</li>
+    <li rel="d">Asd</li>
+</ol>
+<p><a href="http://4ppletree.me/jquery-plugins/jquery-kusearch/" class="btn primary">Click me to read the blog post!</a></p>
+</div>
+</body>
+</html>
